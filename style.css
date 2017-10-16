@@ -8,34 +8,27 @@ body {
   overflow-x: hidden;
 }
 
-/* Styling for nav bar section */
+/* Styling for company section section */
 
-#nav-bar {
-  text-align: center;
+#company-section {
   background-color: #333;
-  overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
 }
 
-.nav-bar-text {
+#company-section h1 {
   font-family: "Poppins", arial;
   text-align: center;
-  margin: 10px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.nav-bar-links {
   color: darkorange;
-  text-decoration: none;
+  font-size: 50px;
   margin: 0px;
-  padding: 0px;
+  padding: 20px;
 }
 
-.nav-bar-links:hover {
-  text-decoration: none;
-  color: grey;
+#company-section h3 {
+  font-family: "Poppins", arial;
+  text-align: center;
+  color: darkorange;
+  margin: 0px;
+  padding: 20px;
 }
 
 /* your new career app section */
