@@ -1,178 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Careers App</title>
-    <link rel="icon" href="images/letterJ.jpg">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <script src="script.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  </head>
-  <body>
-    <div id="company-section"> <!-- company info (identify who we are) -->
-      <h1>BSc (Hons) Computing Career Application:</h1>
-      <h3>Find that job you've always wanted, or even find the perfect candidate.</h3>
-    </div>
-    <div id="all-jobs"> <!-- section that lists all avaliable jobs -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Want to see what we have to offer?</h1>
-          <h3 id="avaliable-jobs-header">Click below to view all job listings.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div id="list-of-all-jobs"> <!-- list of all jobs go here -->
-          <div class="col-sm-6"> <!-- job title list -->
-            <div id="job-titles" class="job-info-lists">
-              <h3>Job Title:</h3>
-              <div id="append-job-titles-here">
-
-              </div>
+    <head>
+        <title>JamesHuntCode - Home</title>
+        <link type="image/page-logo" href="css/images/website-favicon.png" rel="icon"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- links to all files && CDN's used -->
+        <!-- CSS -->
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- JavaScript -->
+        <script src="javascript/jquery-3.2.1.min.js" type="text/javascript"></script> <!-- jQuery -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> <!-- jQuery UI -->
+        <script src="javascript/script.js" type="text/javascript"></script>
+        <!-- links to all fonts (Google) used -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/> <!-- montserrat -->
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <div id="nav-bar">
+            <div class="container-fluid">
+                <!-- ABOUT JAMES -->
+                <div class="col-sm-3">
+                    <p><a href="#about-james">About James</a></p>
+                </div>
+                <!-- JAMES' SKILLS -->
+                <div class="col-sm-3">
+                    <p><a href="#professional-skillset">James' Skills</a></p>
+                </div>
+                <!-- MY PROJECTS -->
+                <div class="col-sm-3">
+                    <p><a href="#james-recent-projects">James' Projects</a></p>
+                </div>
+                <!-- CONTACT ME ?(FOOTER)? -->
+                <div class="col-sm-3">
+                    <p><a href="#footer">Contact James</a></p>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6"> <!-- job location list -->
-            <div id="job-locations" class="job-info-lists">
-              <h3>Job Location:</h3>
-              <div id="append-job-locations-here">
+        </div>
+        <!-- END OF NAVIGATION BAR -->
 
-              </div>
+        <!-- SUMMARY (SLIDESHOW) -->
+        <div id="summary">
+            <div class="contain-fluid">
+                <!-- MINIGAMES -->
+                <div id="minigames" class="image-stack">
+                    <div id="minigame-slide-content" class="slideshow-content">
+                        <h1>Arcade & Retro Game Development</h1>
+                        <h3>Remaking popular titles such as <a id="github-frogger-link" target="_blank" href="https://github.com/JamesHuntCode/Frogger">'Frogger'</a> & <a id="github-defender-link" target="_blank" href="https://github.com/JamesHuntCode/Defender">'Defender'</a></h3>
+                    </div>
+                </div>
+                <!-- PASSION FOR CODE -->
+                <div id="coding-passion" class="image-stack">
+                    <div id="coding-slide-content" class="slideshow-content">
+                        <h1>Passion For Software Engineering</h1>
+                        <h3>See James' Code Here: <a id="github-profile-link" target="_blank" href="https://github.com/JamesHuntCode">GitHub.com/JamesHuntCode</a></h3>
+                    </div>
+                </div>
+                <!-- STUNNING WEB DESIGN -->
+                <div id="stunning-websites" class="image-stack">
+                    <div id="website-slide-content" class="slideshow-content">
+                        <h1>Experienced Web Developer</h1>
+                        <h3>Stunning & User Friendly Designs</h3>
+                    </div>
+                </div>
+                <!-- SLIDESHOW CONTROLS -->
+                <div id="slideshow-controls">
+                    <div id="left" class="slideshow-control-button"></div>
+                    <div id="center" class="slideshow-control-button"></div>
+                    <div id="right" class="slideshow-control-button"></div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-12">
-        <div id="button1"><p id="refresh-button">Click here!</p></div>
-      </div>
-    </div>
-    <div id="double-section"> <!-- section containing job finder and career advice -->
-      <div class="row">
-        <div class="col-sm-6"> <!-- job finder -->
-          <h3 class="double-section-header">Looking for a job?</h3>
-          <div class="entry-field">
-            <h3 class="field-data">Enter your job field:</h3>
-            <form id="job-type">
-              <input id="enter-job" type="text" name="job-input" placeholder="Example: Software Engineer">
-            </form>
-          </div>
+        <!-- END OF SUMMARY (SLIDESHOW) -->
+        <div id="spacer"></div>
+        <!-- ABOUT JAMES & PROFESSIONAL SKILLSET -->
+        <!-- ABOUT JAMES -->
+        <div id="about-james">
+            <h1 id="about-james-header" class="main-heading">About James Hunt</h1>
+            <div class="container-fluid">
+                <!-- PHOTO OF JAMES -->
+                <div class="col-sm-4">
+                    <div id="photo-of-james"></div>
+                </div>
+                <!-- INFORMATION ABOUT JAMES -->
+                <div class="col-sm-8">
+                    <p id="info-about-james">
+                        James is currently studying BSc(Hons) Computing at the University of Plymouth.
+                        At the moment James is completing his first year aiming to finish with a 1st.
+                        <br/>
+                        <br/>
+                        James is originally from Plymouth, United Kingdom with family based in the United States of America.
+                        As well as studying for his degree in Computing, James is also the Chairman & Co-Founder of the Plymouth University Computer/Computing Society.
+                        James also volunteers weekly at the Plymouth Central Library to help out with 'Hello World', a coding club aimed at young children.
+                        This is because James recognises the importance of introducing code and technology to a younger audience.
+                        <br/>
+                        <br/>
+                        James has been programming incessantly over the last six years, often making websites or remaking arcade games he played during his childhood.
+                        <br/>
+                        <br/>
+                        James currently shows significant interest in desktop application development and client/server side web scripting.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-6"> <!-- Job search section -->
-          <h3 class="double-section-header">Where do you want to work?</h3>
-          <div class="entry-field">
-            <h3 class="field-data">Enter location:</h3>
-            <form id="location">
-              <input id="enter-location" type="text" name="location-input" placeholder="Example: Plymouth">
-            </form>
-          </div>
+        <!-- END OF ABOUT JAMES -->
+        <!-- JAMES' SKILLSET -->
+        <div id="professional-skillset">
+            <h1 class="main-heading">James' Professional Skill Set</h1>
+            <h3 class="sub-heading">What does James have to offer?</h3>
+            <!-- TOP ROW -->
+            <div class="container-fluid">
+                <!-- C# (.NET) -->
+                <div class="col-sm-4">
+                    <div id="c-sharp-logo" class="skillset-logo"></div>
+                    <h3 id="c-sharp-header" class="skill-header">C# Desktop</h3>
+                    <p id="c-sharp-summary" class="skill-text-summary">
+                        James shows particular interest in desktop application development, his language of choice is C#.
+                        James has become very familiar with this robust, multi-purpose programming language during the 2 years he has been using it.
+                    </p>
+                    <p class="github-repo-link-wrapper">
+                        <a id="c-sharp-link" class="github-repo-link" target="_blank" href="https://github.com/JamesHuntCode?utf8=%E2%9C%93&tab=repositories&q=&type=&language=c%23">Click Here To See James' C# Projects</a>
+                    </p>
+                </div>
+                <!-- JavaScript -->
+                <div class="col-sm-4">
+                    <div id="javascript-logo" class="skillset-logo"></div>
+                    <h3 id="javascript-header" class="skill-header">Web Scripting</h3>
+                    <p id="javascript-summary" class="skill-text-summary">
+                        James has always been interested in client side web scripting.
+                        This interest fueled him to learn JavaScript, a language in which he is very proficient.
+                        As well as writing vanilla JavaScript, James is also a fan of using jQuery to aid him in his JavaScript projects.
+                    </p>
+                    <p class="github-repo-link-wrapper">
+                        <a id="js-link" class="github-repo-link" target="_blank" href="https://github.com/JamesHuntCode?utf8=%E2%9C%93&tab=repositories&q=&type=&language=javascript">Click Here To See James' JavaScript Projects</a>
+                    </p>
+                </div>
+                <!-- SQL (Database Engineering) -->
+                <div class="col-sm-4">
+                    <div id="sql-logo" class="skillset-logo"></div>
+                    <h3 id="sql-header" class="skill-header">Database Development</h3>
+                    <p id="sql-summary" class="skill-text-summary">
+                        Whilst at university James has encountered many modules in which he had to use MySQL.
+                        James understands the process of designing and developing a database, from data normalisation to producing complex queries to elicit data.
+                    </p>
+                    <p class="github-repo-link-wrapper">
+                        <a id="sql-link" class="github-repo-link" target="_blank" href="https://github.com/JamesHuntCode/SQL-Garage-Database-System">Click Here To See James' MySQL Projects</a>
+                    </p>
+                </div>
+            </div>
+            <!-- BOTTOM ROW -->
+            <div class="container-fluid">
+                <!-- Processing -->
+                <div class="col-sm-4">
+                    <div id="processing-logo" class="skillset-logo"></div>
+                    <h3 id="processing-header" class="skill-header">Processing</h3>
+                    <p id="processing-summary" class="skill-text-summary">
+                        James has also become a fan of the Java framework, Processing.
+                        James enjoys programming arcade games in Processing as it is a fast and reliable library.
+                        Becoming familiar with Processing has also prompted James to begin studying Java.
+                    </p>
+                    <p class="github-repo-link-wrapper">
+                        <a id="processing-link" class="github-repo-link" target="_blank" href="https://github.com/JamesHuntCode?utf8=%E2%9C%93&tab=repositories&q=&type=&language=processing">Click Here To See James' Processing Projects</a>
+                    </p>
+                </div>
+                <!-- HTML / CSS (Web Design) -->
+                <div class="col-sm-4">
+                    <div id="html-css-logo" class="skillset-logo"></div>
+                    <h3 id="html-css-header" class="skill-header">HTML5 & CSS3</h3>
+                    <p id="html-css-summary" class="skill-text-summary">
+                        James has been using HTML and CSS for over 5 years and is familiar with new HTML5 and CSS3 features.
+                        James is also a huge advocate of responsive web design, leading him to use Bootstrap in the majoriy of his web based projects.
+                    </p>
+                    <p class="github-repo-link-wrapper">
+                        <a id="html-css-link" class="github-repo-link" target="_blank" href="https://github.com/JamesHuntCode?utf8=%E2%9C%93&tab=repositories&q=&type=&language=html">Click Here To See James' Web Projects</a>
+                    </p>
+                </div>
+                <!-- p5.js (combining Processing with the web) -->
+                <div class="col-sm-4">
+                    <div id="p5-logo" class="skillset-logo"></div>
+                    <h3 id="p5-header" class="skill-header">p5.js</h3>
+                    <p id="p5-summary" class="skill-text-summary">
+                        Already understanding JavaScript and Processing to a high level allowed James to explore the magical world of p5.js.
+                        p5.js offers a Processing like feel, and allows James to bring his arcade games to the web by offering a fast and reactive framework to develop within.
+                    </p>
+                    <p class="github-repo-link-wrapper">
+                        <a id="p5-link" class="github-repo-link" target="_blank" href="https://github.com/JamesHuntCode?utf8=%E2%9C%93&tab=repositories&q=&type=&language=javascript">Click Here To See James' p5.js Projects</a>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="button2"><p>Search!</p></div>
-        </div>
-      </div>
-    </div>
-    <div id="display-job-results"> <!-- section that displays user job search results -->
-      <h1 id="search-result-header">Search result(s):</h1>
-      <div id="append-search-results-here">
+        <!-- END OF JAMES' SKILLSET -->
+        <!-- END OF ABOUT & PROFESSIONAL SKILLSET -->
 
-        <!-- <div class="search-result">
-          <p id="uploaded-job-name">Programmer</p>
-          <p id="uploaded-job-location">London</p>
-          <p id="uploaded-job-description">Front end JavaScript developer for a company called weCode.</p>
-        </div> -->
+        <!-- MY RECENT PROJECTS -->
+        <div id="james-recent-projects">
+            <h1 id="james-projects-header" class="main-heading">Check Out James' Recent Projects</h1>
+            <h3 id="james-projects-sub-header" class="sub-heading">Stay Up To Date With James' Latest Work</h3>
+            <!-- DEFAULT VIEW - SHOW USER 3 POPULAR PROJECTS -->
+            <div id="top-3-projects">
+                <div class="container-fluid">
+                    <!-- DEFENDER -->
+                    <div class="col-sm-4">
+                        <h3 id="defender-header" class="project-sub-header">Defender</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Defender" class="link-to-project">
+                            <div id="defender-img" class="project-gif-top"></div>
+                        </a>
+                        <h3 id="defender-language-used" class="language-used-header">Created In: <span>p5.js</span></h3>
+                    </div>
+                    <!-- DOODLE JUMP -->
+                    <div class="col-sm-4">
+                        <h3 id="doodle-jump-header" class="project-sub-header">Doodle Jump</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Doodle-Jump" class="link-to-project">
+                            <div id="doodle-jump-img" class="project-gif-top"></div>
+                        </a>
+                        <h3 id="doodle-jump-language-used" class="language-used-header">Created In: <span>Processing</span></h3>
+                    </div>
+                    <!-- GALAGA -->
+                    <div class="col-sm-4">
+                        <h3 id="galaga-header" class="project-sub-header">Galaga</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Galaga" class="link-to-project">
+                            <div id="galaga-img" class="project-gif-top"></div>
+                        </a>
+                        <h3 id="galaga-language-used" class="language-used-header">Created In: <span>p5.js</span></h3>
+                    </div>
+                </div>
+            </div>
+            <p id="direct-user-down">Want to see more? Click below!</p>
+            <div id="drop-down-button"></div>
+            <!-- EXTRA VIEW - DROP DOWN DISPLAYING 4 MORE PROJECTS -->
+            <div id="bottom-4-projects">
+                <div class="container-fluid">
+                    <!-- JOB SEARCH APP -->
+                    <div class="col-sm-3">
+                        <h3 id="job-app-header" class="project-sub-header">Career App</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Job-Search-Web-App" class="link-to-project">
+                            <div class="project-gif-bottom"></div>
+                        </a>
+                        <h3 id="job-app-language-used" class="language-used-header-lower">Created In: <span>JavaScript</span></h3>
+                    </div>
+                    <!-- FLAPPY BIRD -->
+                    <div class="col-sm-3">
+                        <h3 id="flappy-bird-header" class="project-sub-header">Flappy Bird</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Flappy-Bird" class="link-to-project">
+                            <div class="project-gif-bottom"></div>
+                        </a>
+                        <h3 id="flappy-bird-language-used" class="language-used-header-lower">Created In: <span>C#</span></h3>
+                    </div>
+                    <!-- PONG -->
+                    <div class="col-sm-3">
+                        <h3 id="pong-header" class="project-sub-header">Pong</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Pong" class="link-to-project">
+                            <div class="project-gif-bottom"></div>
+                        </a>
+                        <h3 id="pong-language-used" class="language-used-header-lower">Created In: <span>C#</span></h3>
+                    </div>
+                    <!-- CAR HIRE MAINTENANCE INC -->
+                    <div class="col-sm-3">
+                        <h3 id="car-hire-header" class="project-sub-header">Car Hire App</h3>
+                        <a target="_blank" href="https://github.com/JamesHuntCode/Car-Hire-Maintenance-Inc" class="link-to-project">
+                            <div class="project-gif-bottom"></div>
+                        </a>
+                        <h3 id="car-hire-language-used" class="language-used-header-lower">Created In: <span>C#</span></h3>
+                    </div>
+                </div>
+                <!-- OFFER USER TO VIEW ALL CODE ON GITHUB/JAMESHUNTCODE -->
+                <p id="view-all">
+                    <a target="_blank" href="https://github.com/JamesHuntCode">
+                        Looking for more? Click here to go straight to James' GitHub account.
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- END OF MY RECENT PROJECTS -->
 
-      </div>
-      <h1 id="you-may-like-header">Related jobs (by location or title):</h1>
-      <div id="append-similar-results-here"> <!-- section which will display similar jobs to that searched by the user -->
+        <!-- MAYBE PUT A 'KEEPING UP WITH JAMES SECTION' HERE -->
 
-        <!-- <div class="search-result">
-          <p id="uploaded-job-name">Programmer</p>
-          <p id="uploaded-job-location">London</p>
-          <p id="uploaded-job-description">Front end JavaScript developer for a company called weCode.</p>
-        </div> -->
 
-      </div>
-    </div>
-    <div id="advertise-job"> <!-- section allowing people to advertise jobs -->
-      <h1>Advertise a job vacancy:</h1>
-      <div class="row">
-        <div class="col-sm-6"> <!-- job title -->
-          <div class="enter-job-details">
-            <h3>Job title:</h3>
-            <form id="job-title-form" class="upload-job-form">
-              <input id="job-title" class="upload-job-input" type="text" name="job-title-input" placeholder="Example: Teacher">
-            </form>
-          </div>
-        </div>
-        <div class="col-sm-6"> <!-- job location -->
-          <div class="enter-job-details">
-            <h3>Job location:</h3>
-            <form id="job-location-form" class="upload-job-form">
-              <input id="job-location" class="upload-job-input" type="text" name="job-location-input" placeholder="Example: London">
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12"> <!-- job description -->
-          <div id="job-description" class="enter-job-details">
-            <h3>Job description:</h3>
-            <form id="job-desc-form" class="upload-job-form">
-              <input id="job-desc" class="upload-job-input" type="text" name="job-desc-input" placeholder="Short job summary (approx 15 words)">
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="button3"><p>Submit!</p></div>
-        </div>
-      </div>
-    </div>
-    <div id="display-user-submitted-jobs"> <!-- section that displays all user uploaded job openings -->
-      <h1>Your current job adverts:</h1>
-      <h3 id="no-ad-text">You currently have no live job adverts.</h3>
-      <div id="append-jobs-here"> <!-- where jobs will be appended from JavaScript -->
+        <!-- END OF POTENTIAL 'KEEPING UP WITH JAMES SECTION' -->
 
-         <!-- <div class="appended-job">
-          <p id="uploaded-job-name">Programmer</p>
-          <p id="uploaded-job-location">London</p>
-          <p id="uploaded-job-description">Front end JavaScript developer for a company called weCode.</p>
-        </div> -->
-
-      </div>
-    </div>
-    <div id="footer"> <!-- footer section containing more information -->
-      <div class="row">
-        <div class="col-sm-3">
-          <h3>Our services</h3>
-          <p><a href="#">Job finder</a></p>
-          <p><a href="#">Careers test</a></p>
-          <p><a href="#">Your ideal job</a></p>
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="container-fluid">
+                <!-- ON THIS PAGE -->
+                <div class="col-sm-4">
+                    <h3 class="footer-header">On This Page</h3>
+                    <p><a href="#about-james">About James</a></p>
+                    <p><a href="#professional-skillset">James' Skills</a></p>
+                    <p><a href="#james-recent-projects">James' Projects</a></p>
+                </div>
+                <!-- USEFUL LINKS -->
+                <div class="col-sm-4">
+                    <h3 class="footer-header">Useful Links</h3>
+                    <p><a a target="_blank" href="https://www.linkedin.com/in/james-hunt-a63762106/">James' LinkedIn Profile</a></p>
+                    <p><a target="_blank" href="https://github.com/JamesHuntCode">Follow James On GitHub</a></p>
+                    <p><a target="_blank" href="https://processing.org/">Support Processing.org</a></p>
+                </div>
+                <!-- CONTACT JAMES -->
+                <div class="col-sm-4">
+                    <h3 class="footer-header">Contact James</h3>
+                    <p>Mobile No: 07415661731</p>
+                    <p>Email: jameshuntwork1997@yahoo.com</p>
+                </div>
+            </div>
+            <p id="src-code">
+                source code for this website can be found on James' <a id="src-code-link" target="_blank" href="https://github.com/JamesHuntCode/JamesHuntCode">GitHub</a>.
+            </p>
         </div>
-        <div class="col-sm-3">
-          <h3>Learn more</h3>
-          <p><a href="#">What we offer</a></p>
-          <p><a href="#">How we can help you</a></p>
-          <p><a href="#">Work with us</a></p>
-        </div>
-        <div class="col-sm-3">
-          <h3>About us</h3>
-          <p><a href="#">Our business</a></p>
-          <p><a href="#">Our developers</a></p>
-          <p><a href="#">Our vision</a></p>
-        </div>
-        <div class="col-sm-3">
-          <h3>Contact us</h3>
-          <p><a href="#">Email: example@example.co.uk</a></p>
-          <p><a href="#">Phone: 01752 339098</a></p>
-          <p><a href="#">Facebook: Facebook.com/example</a></p>
-        </div>
-      </div>
-      <p id="copyright">Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
-    </div>
-  </body>
+        <!-- END OF FOOTER -->
+    </body>
 </html>
